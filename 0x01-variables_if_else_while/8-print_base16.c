@@ -11,8 +11,8 @@ int main(void)
 
 	for (i = '0'; i <= '9'; i++)
 		putchar(i);
-		for (hex = 'a'; hex <= 'f'; hex++)
-			putchar(hex);
+	for (hex = 'a'; hex <= 'f'; hex++)
+		putchar(hex);
 	putchar('\n');
 	return (0);
 }
