@@ -2,14 +2,14 @@
 
 /**
  * _isdigit - checks for letters character
- * @c: letter to be checked
+ * @p: number to be checked
  *
  * Return: 1 if digit. 0 otherwise
  */
 
-int _isdigit(int c)
+int _isdigit(int p)
 {
-	if (c >= 48 && c <= 58)
+	if (p >= 48 && p <= 58)
 		return (1);
 	else
 		return (0);
