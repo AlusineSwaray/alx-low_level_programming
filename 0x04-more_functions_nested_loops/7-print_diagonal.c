@@ -14,8 +14,10 @@ void print_diagonal(int n)
 
 	while (i < n)
 	{
-		if (n == 0)
+		if (n <= 0)
+		{
 			_putchar('\n');
+		}
 		for (space = 0; space < i; space++)/*prints space after the new line*/
 		{
 			_putchar(' ');
@@ -24,5 +26,5 @@ void print_diagonal(int n)
 		_putchar('\n');
 		i++;
 	}
-
+	_putchar('\n');
 }
