@@ -8,19 +8,20 @@
 
 void more_numbers(void)
 {
-	int c;
+	int c = 0;
 	int i = 0;
 
-	while ( i < 10)
+	while (c < 10)
 	{
-			for (c = 0; c < 14; c++)
+		for (i = 0; i < 15; i++)/*print numbers from 0 to 14*/
+		{
+			if (i > 9)/* if the number has 2 digits*/
 			{
-
-				putchar(c);
-
+				_putchar('0' + i / 10);
 			}
-			putchar('\n');
-			i++;
+			_putchar('0' + i % 10);/* print the ones digit*/
+		}
+			_putchar('\n');
+			c++;
 	}
-	
 }
