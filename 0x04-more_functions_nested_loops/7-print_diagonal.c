@@ -13,12 +13,12 @@ void print_diagonal(int n)
 	int space;
 
 	if (n <= 0)
-			{
-				_putchar('\n');
-			}
+	{
+		_putchar('\n');
+	}
 	while (i < n)
 	{
-		for (space = 0; space < i; space++)/*prints space after the new line*/
+		for (space = 0; space < i; space++)
 		{
 			_putchar(' ');
 		}
