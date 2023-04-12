@@ -18,10 +18,10 @@ void print_rev(char *rev)
 		rev++;/*increament the size of the pointer by itself*/
 	}
 
-	for (p = 1; p <= i; p++)
+	for (p = 0; p <= i; p++)
 	{
 		_putchar(*rev);
-		rev--;
+		--rev;
 	}
 	_putchar('\n');
 }
