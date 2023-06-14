@@ -9,16 +9,17 @@
 
 void print_rev(char *rev)
 {
-    int i = 0;
-    while(*rev != '\0')
-    {
-        i++;
-        rev++;
-    }
-    for(i = i;i >= 0; i--)
-    {
-        _putchar(*rev);
-        rev--;
-    }
-    _putchar('\n');
+	int i = 0;
+
+	while (*rev != '\0')
+	{
+		i++;
+		rev++;
+	}
+	for (i = i; i >= 0; i--)
+	{
+		_putchar(*rev);
+		rev--;
+	}
+	_putchar('\n');
 }
