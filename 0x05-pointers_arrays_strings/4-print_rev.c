@@ -19,7 +19,7 @@ void print_rev(char *rev)
 
 	for (i = i; i >= 0; --i)
 	{
-		if (*rev == '\0')
+		if (*rev == '\0')/*without this condition, we get an invisible character*/
 		{
 			rev--;
 			continue;
