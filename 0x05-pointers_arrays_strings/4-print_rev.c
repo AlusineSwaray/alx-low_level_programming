@@ -9,19 +9,16 @@
 
 void print_rev(char *rev)
 {
-	int i = 0;
-	int p;
-
-	while (*rev != '\0')/*set a condition to not print null zero*/
-	{
-		i++;
-		rev++;/*increament the size of the pointer by itself*/
-	}
-
-	for (p = 0; p <= i; p++)
-	{
-		_putchar(*rev);
-		--rev;
-	}
-	_putchar('\n');
+    int i = 0;
+    while(*rev != '\0')
+    {
+        i++;
+        rev++;
+    }
+    for(i = i;i >= 0; i--)
+    {
+        _putchar(*rev);
+        rev--;
+    }
+    _putchar('\n');
 }
