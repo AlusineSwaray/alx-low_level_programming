@@ -13,11 +13,17 @@ void print_rev(char *rev)
 
 	while (*rev != '\0')
 	{
-		i++;
-		rev++;
+		++i;
+		++rev;
 	}
+
 	for (i = i; i >= 0; --i)
 	{
+		if (*rev == '\0')
+		{
+			rev--;
+			continue;
+		}
 		_putchar(*rev);
 		--rev;
 	}
