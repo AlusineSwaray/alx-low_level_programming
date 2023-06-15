@@ -9,16 +9,19 @@
 
 void rev_string(char *str)
 {
-	int a;
-	int i = 0;
+	int a = 0, i = 0;
+	char ch;/*temporary char storage*/
 
-	for (a = 0; str[a] != '\0'; ++a)
+	while (str[a] != '\0')/*loop to find string length*/
 	{
-		i++;
+		a++;
 	}
-	for (a = i; a >= 0; --a)
+	a--;/*to ignore the null */
+	for (i; i <= a; i++)/*reversing loop*/
 	{
-		putchar(str[a]);
+		ch = str[i];
+		str[i] = str[a];
+		str[a] = ch;
+		a--;
 	}
-	putchar('\n');
 }
