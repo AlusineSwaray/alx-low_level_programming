@@ -9,7 +9,7 @@
 
 void rev_string(char *str)
 {
-	int a = 0, i = 0;
+	int a = 0, i;
 	char ch;/*temporary char storage*/
 
 	while (str[a] != '\0')/*loop to find string length*/
@@ -17,7 +17,7 @@ void rev_string(char *str)
 		a++;
 	}
 	a--;/*to ignore the null */
-	for (i; i <= a; i++)/*reversing loop*/
+	for (i = 0; i <= a; i++)/*reversing loop*/
 	{
 		ch = str[i];
 		str[i] = str[a];
