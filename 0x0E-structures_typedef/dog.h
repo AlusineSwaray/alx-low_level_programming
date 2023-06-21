@@ -4,7 +4,7 @@
 /**
  * u_int - Typedef for struct dog
  */
-typedef struct dog_t;
+typedef struct dog dog_t;
 
 /**
   * struct dog - A struct for info on dogs
@@ -21,4 +21,5 @@ struct dog
 	char *owner;
 };
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
