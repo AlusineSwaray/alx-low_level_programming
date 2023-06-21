@@ -9,7 +9,7 @@
   *
   * Description: lorem ipsum
   */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
