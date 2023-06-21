@@ -2,9 +2,9 @@
 #define DOG_H
 
 /**
- * u_int - Typedef for unsigned int
+ * u_int - Typedef for struct dog
  */
-typedef struct dog woof;
+typedef struct dog_t;
 
 /**
   * struct dog - A struct for info on dogs
