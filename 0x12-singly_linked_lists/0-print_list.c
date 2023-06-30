@@ -10,9 +10,6 @@ size_t print_list(const list_t *h)
 	size_t count = 0;
 	list_t const *ptr = h;
 
-	if (h == NULL)
-		printf("[0] (nil)\n");
-
 	while (ptr != NULL)
 	{
 		if (ptr->str == NULL)
